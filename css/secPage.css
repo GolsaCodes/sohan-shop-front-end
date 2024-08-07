@@ -1,0 +1,110 @@
+@font-face {
+  font-family: Shabnam;
+  src:url(fonts/gandom/Gandom.woff);
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+
+}
+
+.my-img {
+  padding: 20px;
+}
+
+.my-video{
+    margin: 20px;
+    padding: 20px;
+}
+
+.main {
+  display: flex;
+  text-align: center;
+  flex: 50%;
+  flex-direction: row;
+  background-color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.left-side {
+    text-align: center;
+    flex: 25%;
+    background-color:rgb(208, 208, 189);
+}
+.right-side {
+    text-align: center;
+    flex: 25%;
+    background-color:rgb(208, 208, 189);
+}
+
+header, footer {
+    background: #000000;
+    padding: 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Aldhabi;
+    font-size: 40px;
+  
+}
+
+.text {
+  text-align: right;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  font-family: Shabnam;
+
+}
+
+.scrollbox {
+  overflow: auto;
+  max-height: 140vh;  
+}
+
+.navbar {
+  
+  display: flex;
+  justify-content: right;
+  background-color: #8ca286;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .main, .row {
+    flex-direction: column;
+  }
+
+  .main,
+  .left-side,
+  .right-side{
+    flex: 100%;
+    background: white;
+  }
+  .my-img {
+    width: 100%;
+    height: auto;
+  }
+}
